@@ -12,11 +12,12 @@ var menuLinks = [
 const mainEl = document.body.querySelector('main');
 
 // Get the value of the --main-bg CSS custom property
-const mainBgColor = getComputedStyle(mainEl).getPropertyValue('--main-bg');
+// const mainBgColor = getComputedStyle(mainEl).getPropertyValue('--main-bg');
 
 // console.log(mainBgColor);
 
- mainEl.style.backgroundColor = mainBgColor;
+//  mainEl.style.backgroundColor = mainBgColor;
+mainEl.style.backgroundColor = "var(--main-bg)";
  mainEl.innerHTML='<h1>DOM Manipulation</h1>';
  mainEl.classList.add('flex-ctr');
 
